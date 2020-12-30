@@ -14,7 +14,7 @@ import (
 
 var (
 	iface    = "any"
-	ip       = "52.15.99.88"
+	ip       = "127.0.0.1"
 	ports    = strings.Split("21,22,25,80,135,443,631,1723", ",")
 	bpf      = "src host %s and (tcp[13] == 0x11 or tcp[13] == 0x10 or tcp[13] == 0x18)"
 	snaplen  = int32(1024)
